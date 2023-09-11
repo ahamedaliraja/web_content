@@ -1,0 +1,6 @@
+---
+- name: Tag Playbook 
+  hosts: prod
+  become: yes
+  tasks:
+<Fill me>
