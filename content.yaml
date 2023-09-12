@@ -3,4 +3,14 @@
   hosts: prod
   become: yes
   tasks:
-<Fill me>
+    - name: Alpha task
+      ansible.builtin.copy:
+        content: "Qura or sera"
+        dest: /var/www/html/index.html
+      tags: [never, alpha]
+
+    - name: beta task
+      ansible.builtin.copy:
+        content: "What will happer it will"
+        dest: /var/www/html/index.html
+      tags: [never, beta]
